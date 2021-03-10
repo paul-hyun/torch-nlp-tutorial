@@ -180,7 +180,7 @@ class SimpleDataSet(torch.utils.data.Dataset):
 
     def collate_fn(self, batch):
         """
-        배치단위로 데이터 처리
+        batch단위로 데이터 처리
         :param batch: batch 단위 데이터
         """
         inputs, labels = list(zip(*batch))
@@ -325,7 +325,7 @@ def main(args):
     print(f"test_loss: {test_loss:.5f}, test_acc: {test_acc:.5f}")
 
     #
-    # 배치
+    # 배포
     #
     # 배치용 모델 생성
     model = SequencePrediction(len(word_to_id))
