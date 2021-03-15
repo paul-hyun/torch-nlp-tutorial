@@ -9,6 +9,7 @@ import torch
 def do_predict(word_to_id, model, string):
     """
     입력에 대한 답변 생성하는 함수
+    :param word_to_id: vocabulary
     :param model: model
     :param string: 입력 문자열
     """
