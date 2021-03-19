@@ -19,7 +19,9 @@ def element_wise_sum(args, A):
     B = torch.tensor(B)
 
     print(A)
+    print()
     print(B)
+    print()
     print(A + B)
 
     #
@@ -29,13 +31,16 @@ def element_wise_sum(args, A):
     B = torch.tensor(B)
 
     print(A)
+    print()
     print(B)
+    print()
     print(A + B)
 
     # B 행렬 열복사 후 합
     B1 = B.repeat(1, 4)
 
     print(B1)
+    print()
     print(A + B1)
 
     #
@@ -45,13 +50,16 @@ def element_wise_sum(args, A):
     B = torch.tensor(B)
 
     print(A)
+    print()
     print(B)
+    print()
     print(A + B)
 
     # B 행렬 행복사 후 합
     B1 = B.repeat(5, 1)
 
     print(B1)
+    print()
     print(A + B1)
 
     #
@@ -61,13 +69,16 @@ def element_wise_sum(args, A):
     B = torch.tensor(B)
 
     print(A)
+    print()
     print(B)
+    print()
     print(A + B)
 
     # B 행렬 행과 열 복사 후 합
     B1 = B.repeat(5, 4)
 
     print(B1)
+    print()
     print(A + B1)
 
 
@@ -84,7 +95,9 @@ def element_wise_product(args, A):
     B = torch.tensor(B)
 
     print(A)
+    print()
     print(B)
+    print()
     print(A * B)
 
     #
@@ -94,13 +107,16 @@ def element_wise_product(args, A):
     B = torch.tensor(B)
 
     print(A)
+    print()
     print(B)
+    print()
     print(A * B)
 
     # B 행렬 열복사 후 element wise product
     B1 = B.repeat(1, 4)
 
     print(B1)
+    print()
     print(A * B1)
 
     #
@@ -110,13 +126,16 @@ def element_wise_product(args, A):
     B = torch.tensor(B)
 
     print(A)
+    print()
     print(B)
+    print()
     print(A * B)
 
     # B 행렬 행복사 후 element wise product
     B1 = B.repeat(5, 1)
 
     print(B1)
+    print()
     print(A * B1)
 
     #
@@ -126,13 +145,16 @@ def element_wise_product(args, A):
     B = torch.tensor(B)
 
     print(A)
+    print()
     print(B)
+    print()
     print(A * B)
 
     # B 행렬 행과 열 복사 후 합
     B1 = B.repeat(5, 4)
 
     print(B1)
+    print()
     print(A + B1)
 
 
@@ -149,7 +171,9 @@ def matrix_multiplication(args, A):
     B = torch.tensor(B)
 
     print(A)
+    print()
     print(B)
+    print()
     print(torch.matmul(A, B))
 
     # 직접계산
@@ -174,6 +198,7 @@ def dot_product(args):
     b = torch.tensor(b)
 
     print(a)
+    print()
     print(b)
 
     # dot-product
@@ -183,6 +208,7 @@ def dot_product(args):
     c = a * b
 
     print(c)
+    print()
     print(torch.sum(c))
 
 
